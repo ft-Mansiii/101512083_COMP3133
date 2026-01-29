@@ -1,0 +1,20 @@
+path.basename(filePath)
+If filePath is: C:\...\canada.txt
+basename gives: canada.txt
+
+
+event emitter: an object that emits events and lets you listen for those events. some event emitters:
+streams
+servers
+file readers
+timers
+emit("data", someValue); emit("end"); emit("error", errorObject);
+so When you do:
+fs.createReadStream(...)
+You get a Readable Stream.
+Readable streams come with predefined events:
+Event name	Emitted when
+"data"	A chunk (or row) is ready
+"end"	No more data
+"error"	Something went wrong
+data, end, and error are predefined stream events emitted by Node.js and libraries like csv-parser; we don’t define them, we listen to them using .on().

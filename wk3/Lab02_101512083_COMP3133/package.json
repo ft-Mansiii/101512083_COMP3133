@@ -1,0 +1,19 @@
+{
+  "name": "lab02_101512083_comp3133",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "chai": "^6.2.2",
+    "mocha": "^11.7.5"
+  }
+}
